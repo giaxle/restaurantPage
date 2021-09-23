@@ -1,0 +1,65 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: url('./chicken.jpg');
+}
+
+#content {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    width: 700px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: cornsilk;
+}
+
+.navbtn {
+    width: 200px;
+    height: 50px;
+    font-size: large;
+    font-weight: bold;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    border: none;
+    background-color: cornsilk;
+}
+
+.navbtn:hover {
+    color: white;
+    background: black;
+}
+
+/* css for menu module */
+.listContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.listCard {
+    border: 1px solid black;
+    margin: 0 5px 0 5px;
+    padding-bottom: 20px;
+    list-style-type: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #content {
+        width: 100%;
+        padding:0;
+        border: none;
+    }
+
+    .navbtn {
+        width: 100%;
+    }
+
+    .listContainer {
+        display: grid;
+        grid-template-rows: auto;
+        width: 100%;
+    }
+}   
+
